@@ -12,13 +12,13 @@ class Animal:
             Animal.alive = Animal.alive + [self]
 
     def __str__(self) -> str:
-        a = ("{Name: "
-             + str(self.name)
-             + ", Health: "
-             + str(self.health)
-             + ", Hidden: "
-             + str(self.hidden) + "}")
-        return a
+        result = ("{Name: "
+                  + str(self.name)
+                  + ", Health: "
+                  + str(self.health)
+                  + ", Hidden: "
+                  + str(self.hidden) + "}")
+        return result
 
     def __repr__(self) -> str:
         return self.__str__()
